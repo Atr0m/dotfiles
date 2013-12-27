@@ -1,0 +1,32 @@
+#
+#### Configuracion ncmpcpp ####
+#
+mpd_music_dir = "/home/morta/Musica"
+
+playlist_display_mode = "columns"
+
+song_status_format = "%t{ - %a}{ - %b}{ (%y)}"
+song_window_title_format = "MPD: {%a - }{%t}|{%f}"
+song_columns_list_format = "(7)[green]{l} (35)[white]{t} (28)[green]{a} (28)[white]{b}"
+
+user_interface = "alternative"
+
+progressbar_look = "-|-"
+
+display_screens_numbers_on_start = "no"
+
+allow_physical_files_deletion = "no"
+allow_physical_directories_deletion = "no"
+
+colors_enabled = "yes"
+
+progressbar_color = "green"
+
+volume_color = "greeen"
+
+header_window_color = "green"
+
+main_window_color = "green"
+
+#now_playing_prefix = "$b$u"
+#now_playing_suffix = "$/b$/u"
