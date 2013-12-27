@@ -1,0 +1,79 @@
+!---------------------------------
+!---- Xresources By DaeS Dp ------
+!---------------------------------
+
+
+!!!Color!!!
+!---------------------
+!Black = 30m
+*color0:       #151515
+!Gray = 1,30m
+*color8:       #666a6e
+!---------------------
+!Red = 31m
+*color1:       #a85858
+!Red2 = 1,31m
+*color9:       #ff8685
+!---------------------
+!Green = 32m
+*color2:       #6587a8
+!Green2 = 1,32m
+*color10:      #6587a8
+!---------------------
+!Yellow = 33m
+*color3:       #ffd58a
+!Yellow2 =1,33m
+*color11:      #ffd58a
+!---------------------
+!Blue = 34m
+*color4:       #6699cc
+!Blue2 = 1,34m
+*color12:      #6699cc
+!---------------------
+!Magenta = 35m
+*color5:       #6565a8
+!Magenta2 = 1,35m
+*color13:      #6565a8
+!---------------------
+!Cyan = 36m
+*color6:       #99a9cf
+!Cyan2 = 1,36m
+*color14:      #99a9cf
+!---------------------
+!White = 37m
+*color7:       #e0e0e0
+!White2 = 1,36m
+*color15:      #efefef
+!---------------------
+
+
+!!!Config Urxvt!!!
+!-----------------------------------------------------
+!*background:   #000000
+!*foreground:   #d0d0d0
+URxvt.font:    xft:Dejavu Sans Mono:size=11
+!URxvt.geometry: 70x21
+URxvt.scrollBar: false
+Urxvt.secondaryScroll: true
+URxvt.scrollBar_right: false
+URxvt.scrollBar_floating: true
+URxvt.scrollstyle: plain
+URxvt.scrollColor: #252525
+URxvt.cursorColor: #404040
+! Agregar transparancia
+!URxvt*.transparent: true
+! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
+!URxvt*.shading: 15 
+URxvt.depth: 32
+URxvt.background: #121214
+URxvt.foreground: #FFFFFF
+
+!Scrips de urxvt-perls
+URxvt.perl-ext-common:      default,clipboard
+URxvt.url-select.launcher:  firefox
+URxvt.url-select.underline: true
+URxvt.keysym.M-u:           perl:url-select:select_next
+URxvt.keysym.M-Escape:      perl:keyboard-select:activate
+URxvt.keysym.M-s:           perl:keyboard-select:search
+
+!------------------------------------------------------
