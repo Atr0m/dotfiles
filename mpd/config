@@ -78,7 +78,7 @@ user "atr0m"
 # This setting can deny access to control of the daemon.
 #
 # For network
-bind_to_address		"0.0.0.0"
+bind_to_address		"localhost"
 #
 # And for Unix Socket
 #bind_to_address		"~/.mpd/socket"
@@ -433,4 +433,3 @@ audio_output {
 #}
 #
 ###############################################################################
-
