@@ -1,10 +1,9 @@
-dotfiles (ES)
-========
+# dotfiles (ES)
+
 
 Archivos de configuración de mi Arch Linux
 
-Contenido
----------
+## Contenido
 
 ### Awesome
 
@@ -33,13 +32,12 @@ Archivo **zshrc**, configuración del interprete de comandos [Zsh](http://www.zs
 
 ***
 
-dotfiles (EN)
-========
+# dotfiles (EN)
+
 
 Configuration files of my Arch Linux
 
-Content
----------
+## Content
 
 ### Awesome
 
