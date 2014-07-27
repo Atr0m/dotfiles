@@ -1,79 +1,86 @@
-!---------------------------------
-!---- Xresources By DaeS Dp ------
-!---------------------------------
+
+! ----- Colors ----- !
+
+XTerm*background: #121212
+XTerm*foreground: #FFFFFF
+! black
+URxvt.color0 : #2E3436
+URxvt.color8 : #555753
+XTerm*color0 : #2E3436
+XTerm*color8 : #555753
+! red
+URxvt.color1 : #CC0000
+URxvt.color9 : #EF2929
+XTerm*color1 : #CC0000
+XTerm*color9 : #EF2929
+! green
+URxvt.color2 : #4E9A06
+URxvt.color10 : #8AE234
+XTerm*color2 : #4E9A06
+XTerm*color10 : #8AE234
+! yellow
+URxvt.color3 : #C4A000
+URxvt.color11 : #FCE94F
+XTerm*color3 : #C4A000
+XTerm*color11 : #FCE94F
+! blue
+URxvt.color4 : #3465A4
+URxvt.color12 : #729FCF
+XTerm*color4 : #3465A4
+XTerm*color12 : #729FCF
+! magenta
+URxvt.color5 : #75507B
+URxvt.color13 : #AD7FA8
+XTerm*color5 : #75507B
+XTerm*color13 : #AD7FA8
+! cyan
+URxvt.color6 : #06989A
+URxvt.color14 : #34E2E2
+XTerm*color6 : #06989A
+XTerm*color14 : #34E2E2
+! white
+URxvt.color7 : #D3D7CF
+URxvt.color15 : #EEEEEC
+XTerm*color7 : #D3D7CF
+XTerm*color15 : #EEEEEC
 
 
-!!!Color!!!
-!---------------------
-!Black = 30m
-*color0:       #151515
-!Gray = 1,30m
-*color8:       #666a6e
-!---------------------
-!Red = 31m
-*color1:       #a85858
-!Red2 = 1,31m
-*color9:       #ff8685
-!---------------------
-!Green = 32m
-*color2:       #6587a8
-!Green2 = 1,32m
-*color10:      #6587a8
-!---------------------
-!Yellow = 33m
-*color3:       #ffd58a
-!Yellow2 =1,33m
-*color11:      #ffd58a
-!---------------------
-!Blue = 34m
-*color4:       #6699cc
-!Blue2 = 1,34m
-*color12:      #6699cc
-!---------------------
-!Magenta = 35m
-*color5:       #6565a8
-!Magenta2 = 1,35m
-*color13:      #6565a8
-!---------------------
-!Cyan = 36m
-*color6:       #99a9cf
-!Cyan2 = 1,36m
-*color14:      #99a9cf
-!---------------------
-!White = 37m
-*color7:       #e0e0e0
-!White2 = 1,36m
-*color15:      #efefef
-!---------------------
+
 
 
 !!!Config Urxvt!!!
 !-----------------------------------------------------
-!*background:   #000000
-!*foreground:   #d0d0d0
-URxvt.font:    xft:Dejavu Sans Mono:size=11
-!URxvt.geometry: 70x21
-URxvt.scrollBar: false
-Urxvt.secondaryScroll: true
-URxvt.scrollBar_right: false
-URxvt.scrollBar_floating: true
-URxvt.scrollstyle: plain
-URxvt.scrollColor: #252525
-URxvt.cursorColor: #404040
-! Agregar transparancia
-!URxvt*.transparent: true
-! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
-!URxvt*.shading: 15 
-URxvt.depth: 32
+URxvt.font:    xft:Dejavu Sans Mono:size=12
 URxvt.background: #121214
 URxvt.foreground: #FFFFFF
 
 !Scrips de urxvt-perls
 URxvt.perl-ext-common:      default,clipboard
-URxvt.url-select.launcher:  firefox
-URxvt.url-select.underline: true
-URxvt.keysym.M-u:           perl:url-select:select_next
 URxvt.keysym.M-Escape:      perl:keyboard-select:activate
 URxvt.keysym.M-s:           perl:keyboard-select:search
 
+URxvt.colorUL: #AED210
+URxvt.perl-ext: default,url-select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/firefox -new-tab
+URxvt.url-select.underline: true
+
+Xft*dpi: 96
+Xft*antialias: true
+Xft*hinting: full
+
+URxvt.scrollBar: false
+URxvt*scrollTtyKeypress: true
+URxvt*scrollTtyOutput: false
+URxvt*scrollWithBuffer: false
+URxvt*scrollstyle: plain
+URxvt*secondaryScroll: true
+
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+
 !------------------------------------------------------
+
