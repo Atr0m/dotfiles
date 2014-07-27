@@ -1,10 +1,14 @@
 " Set the external editor
 set editor='/usr/bin/gvim -f +<line> <file>'
 
-" Set the default motor search
-set defsearch=duckduckgo
+" Use duckduckgo to search by default
+map -builtin -modes=n s :open duckduckgo
+map -builtin -modes=n S :tabopen duckduckgo
 
 " Faster navigation
 map -count -modes=n j -builtin <count>3j
 map -count -modes=n k -builtin <count>3k
+
+" Use duckduckgo search
+set defsearch=duckduckgo
 
