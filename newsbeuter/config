@@ -1,0 +1,11 @@
+# Configuration newsbeuter
+
+# Select default browser
+browser          firefox
+
+# show/hide read feeds
+show-read-feeds  no
+
+# Auto-reload feeds
+auto-reload yes
+reload-time 150
