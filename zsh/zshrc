@@ -1,8 +1,16 @@
 #########################################
 
+# Editor por defecto
+export EDITOR="vim"
+
+# Enabling video acceleration
+export LIBVA_DRIVER_NAME=vdpau
+export VDPAU_DRIVER=r600
+
 #Autocompletado usando tabulador
 autoload -U compinit
 compinit
+
 
 autoload -U colors && colors
 
@@ -13,12 +21,6 @@ promptinit
 #Mejora el autocompletado por defecto de zsh
 zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
 zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
-
-#Corrección de comandos
-#setopt correctall
-
-#Activa el indicador propuesto
-#prompt walters
 
 #Configuración propia del indicador:
 PROMPT="[%{$fg[yellow]%}%?%{$reset_color%}]%{$fg[red]%}%B%n%b #"
@@ -54,6 +56,7 @@ esac
 #Alias configurados
 alias ls='ls --color=auto -F'
 alias cp='gcp'
+alias rm='mv --target-directory ~/.local/share/Trash/files'
 
 #Key blindings de la wiki
 bindkey "\e[1~" beginning-of-line # Home
@@ -75,12 +78,3 @@ bindkey "\e[8~" end-of-line # End
 # for non RH/Debian xterm, can't hurt for RH/Debian xterm
 bindkey "\eOH" beginning-of-line
 bindkey "\eOF" end-of-line
-# for freebsd console
-bindkey "\e[H" beginning-of-line
-bindkey "\e[F" end-of-line
-# for guake
-bindkey "\eOF" end-of-line
-bindkey "\eOH" beginning-of-line
-bindkey "^[[1;5D" backward-word
-bindkey "^[[1;5C" forward-word
-bindkey "\e[3~" delete-char # Del
